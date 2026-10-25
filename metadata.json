@@ -1,0 +1,6 @@
+{
+  "name": "אלבום הפוקימון שלי - PokéAlbum",
+  "description": "אלבום קלפי פוקימון דיגיטלי מתקדם לילדים: סריקת קלפים בתמונה ומצלמה עם בינה מלאכותית, אפקטים הולוגרפיים תלת-ממדיים, זירת קרבות פוקימון ויצירת קלפים אישיים.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

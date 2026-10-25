@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'HebrewFont';
+  src: url('/fonts/SimpleCLM-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HebrewFont';
+  src: url('/fonts/SimpleCLM-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: 'HebrewFont', 'Simple CLM', 'Miriam CLM', 'Rubik', 'Heebo', system-ui, sans-serif;
+}
+
+body {
+  font-family: 'HebrewFont', 'Simple CLM', 'Miriam CLM', 'Rubik', 'Heebo', system-ui, sans-serif;
+  background-color: #0d1117;
+  color: #f3f4f6;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* Custom 3D perspective and holographic foil styling */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Holographic shine gradient overlays */
+.holo-foil {
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 30%,
+    rgba(255, 215, 0, 0.25) 45%,
+    rgba(0, 255, 255, 0.3) 50%,
+    rgba(255, 0, 128, 0.25) 55%,
+    rgba(255, 255, 255, 0.08) 70%,
+    transparent 100%
+  );
+  mix-blend-mode: color-dodge;
+}
+
+.holo-rainbow {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 0.2) 0%,
+    rgba(255, 154, 0, 0.2) 15%,
+    rgba(255, 255, 0, 0.2) 30%,
+    rgba(0, 255, 0, 0.2) 45%,
+    rgba(0, 255, 255, 0.2) 60%,
+    rgba(0, 0, 255, 0.2) 75%,
+    rgba(153, 0, 255, 0.2) 90%,
+    rgba(255, 0, 128, 0.2) 100%
+  );
+  mix-blend-mode: overlay;
+}
+
+.gold-foil {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 223, 0, 0.4) 0%,
+    rgba(255, 255, 255, 0.7) 40%,
+    rgba(218, 165, 32, 0.6) 70%,
+    rgba(255, 215, 0, 0.4) 100%
+  );
+  mix-blend-mode: soft-light;
+}
+
+/* Binder pocket sleeve texture */
+.binder-ring {
+  background: linear-gradient(to bottom, #9ca3af 0%, #ffffff 30%, #4b5563 70%, #1f2937 100%);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
